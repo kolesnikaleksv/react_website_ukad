@@ -1,0 +1,15 @@
+.footer {
+   position:absolute;
+   height: 78px;
+   width: 1280px;
+   left: 0;
+   bottom: 0;
+   background: #022B32;
+}
+.footer-container {
+    position: absolute;
+    width: 145px;
+    height: 24px;
+    left: 29px;
+    top: calc(50% - 24px/2);
+}

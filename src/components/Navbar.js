@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
 import logo from '../images/UKAD_logo.png';
 import './Navbar.css';
 
 
 function Navbar() {
-const [click, setClick] = useState(false);
 
     return (
         <>
@@ -14,28 +13,10 @@ const [click, setClick] = useState(false);
                     <Link to="/" className="navbar-logo">
                         <img src={logo} alt="Logo" />
                     </Link>
-                    {/* <div className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <div className='nav-item'>
-                            <Link to='/' className='nav-links' >
-                            Home
-                            </Link>
-                        </div>
-                        <div className='nav-item'>
-                            <Link to='/' className='nav-links' >
-                            Products
-                            </Link>
-                        </div>
-                    </div> */}
-                    <div className='nav-item'>
-                        <Link to='/' className='nav-links active' >
-                        Home
-                        </Link>
-                    </div>
-                    <div className='nav-item'>
-                        <Link to='/' className='nav-links' >
-                        Products
-                        </Link>
-                    </div>
+                    <ul>
+                        <li><NavLink exact activeClassName="active" to='/home' >Home</NavLink></li>
+                        <li><NavLink activeClassName="active" to='/products'>Products</NavLink></li>
+                    </ul> 
                 </div>
 
             </nav>
