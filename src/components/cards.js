@@ -5,10 +5,10 @@ import img from '../images/img.png';
 import '@fortawesome/react-fontawesome';
 
 function Cards() {
-    fetch('https://api.thedogapi.com/v1/breeds?limit=10&page=0')
-    .then(response => response.json())
-    .then(json =>  Object.entries(json).filter(item => item[0]))
-    .then(arr => console.log(arr));
+    // fetch('https://api.thedogapi.com/v1/breeds?limit=10&page=0')
+    // .then(response => response.json())
+    // .then(json =>  Object.entries(json).filter(item => item[0]))
+    // .then(arr => console.log(arr));
     return (
         <>
             <div className="cards">
