@@ -6,11 +6,20 @@ class DogService {
         }
         return await res.json();
     }
-    getAllDogs = () => {
-        return this.getData('https://api.thedogapi.com/v1/breeds?limit=10&page=0');
+    getAllDogs = async () => {
+        const res = await this.getData('https://api.thedogapi.com/v1/breeds?limit=10&page=0');
+        return res.map(this._transformDogs);
     }
-    getDog = (id) => {
-        return this.getData(`https://api.thedogapi.com/v1/breeds/${id}?limit=10&page=0`);
+    getDog = async(id) => {
+        const res = await this.getData(`https://api.thedogapi.com/v1/breeds/${id}?limit=10&page=0`);
+        return this._transformDogs(res);
+    }
+    _transformDogs = (res) => {
+        return {
+            name: res.name,
+            // image: res.image.url,
+            temperament: res.temperament
+        }
     }
 }
 
