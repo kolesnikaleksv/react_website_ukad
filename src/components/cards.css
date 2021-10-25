@@ -11,7 +11,6 @@
 .cards-container {
     display: grid;
     /* flex-flow: row wrap; */
-    margin: 0;
 }
 .title {
     font-family: Poppins;

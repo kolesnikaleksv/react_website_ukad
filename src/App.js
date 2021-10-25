@@ -2,16 +2,18 @@ import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Footer from './components/footer';
-import Cards from './components/cards';
+import Products from './components/Products';
+import Home from './components/Home';
 
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Cards />
       <Switch>
-        <Route path="/" exact></Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/products" component={Products} ></Route>
+        <Route exact path="/home" component={Home} ></Route>
       </Switch>
       <Footer />
     </Router>

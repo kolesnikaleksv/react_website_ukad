@@ -44,14 +44,13 @@ class Cards extends Component {
             // }
             
             return (
-                    <li className="cards-item" key={item.id}>
-                        
-                        <img src={item.imageUrl} alt="vegy" />
-                        <div className="menu__item-text">
-                            <div className="menu__item-subtitle">{item.name}</div>
-                            <div className="menu__item-descr">{item.temperament}</div>
-                        </div>
-                    </li>
+                <li className="cards-item" key={item.id}>
+                    <img src={item.imageUrl} alt="dog" />
+                    <div className="menu__item-text">
+                        <div className="menu__item-subtitle">{item.name}</div>
+                        <div className="menu__item-descr">{item.temperament}</div>
+                    </div>
+                </li>
             )
         });
         // А эта конструкция вынесена для центровки спиннера/ошибки
@@ -81,14 +80,6 @@ class Cards extends Component {
                         {content} 
                     </div>
                 </div>
-            // <div className="char__list">
-            //     {errorMessage}
-            //     {spinner}
-            //     {content}
-            //     <button className="button button__main button__long">
-            //         <div className="inner">load more</div>
-            //     </button>
-            // </div>
         )
     }
 }

@@ -16,6 +16,7 @@ class DogService {
     }
     _transformDogs = (res) => {
         return {
+            id: res.id,
             name: res.name,
             imageUrl: res.image.url,
             temperament: res.temperament
