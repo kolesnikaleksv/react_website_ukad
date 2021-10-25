@@ -4,12 +4,14 @@
     border-radius: 0px;
     margin-top: 78px;
     height: 1258px;
-    width: 1280px;
+    width: 1560px;
     background: #E5E5E5;
+    display: grid;
 }
 .cards-container {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    /* flex-flow: row wrap; */
+    margin: 0;
 }
 .title {
     font-family: Poppins;
@@ -26,12 +28,17 @@
 .cards-item {
     width: 350px;
     height: 474px;
-    margin: 16px 20px 24px 20px;
+    /* margin: 16px 20px 24px 20px; */
     align-items: center;
+}
+.dog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
 }
 .cards-item img{
     width: 350px;
     height: 362px;
+    
 }
 .menu__item-text {
     margin: 0 auto;
