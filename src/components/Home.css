@@ -1,0 +1,11 @@
+.home-slider {
+    left: 0px;
+    right: 0px;
+    border-radius: 0px;
+    margin-top: 78px;
+    height: 800px;
+    width: 1560px;
+    background: #FFFFFF;
+    /* display: grid; */
+    /* position: relative;  */
+}

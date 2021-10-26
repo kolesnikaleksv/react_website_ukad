@@ -1,16 +1,12 @@
 import { Component } from 'react';
-import './cards.css';
+import './card.css';
 import DogService from '../services/DogService';
-import Spinner from './spinner/spinner';
-import ErrorMessage from './errorMessage/ErrorMessage';
 
 
-class Cards extends Component {
+class Card extends Component {
 
     state = {
-        dog: [],
-        loading: true,
-        error: false
+        dog: []
     }
     
     dogService = new DogService();
@@ -22,60 +18,36 @@ class Cards extends Component {
     }
     onDogLoaded = (dog) => {
         this.setState({
-            dog,
-            loading: false
+            dog
         })
     }
 
-    onError = () => {
-        this.setState({
-            error: true,
-            loading: false
-        })
-    }
-
-    // Этот метод создан для оптимизации, 
-    // чтобы не помещать такую конструкцию в метод render
-    renderItems(arr) {
-        const items =  arr.map((item) => {
-            
-            return (
-                <li className="cards-item" key={item.id}>
-                    <img src={item.imageUrl} alt="dog" />
-                    <div className="menu__item-text">
-                        <div className="menu__item-subtitle">{item.name}</div>
-                        <div className="menu__item-descr">{item.temperament}</div>
-                    </div>
-                </li>
-            )
-        });
-        // А эта конструкция вынесена для центровки спиннера/ошибки
-        return (
-            <ul className="dog-grid">
-                {items}
-            </ul>
-        )
-    }
+    // onError = () => {
+    //     this.setState({
+    //         error: true,
+    //         loading: false
+    //     })
+    // }
 
     render() {
 
-        const {dog, loading, error} = this.state;
-        
-        const items = this.renderItems(dog);
-
-        const errorMessage = error ? <ErrorMessage/> : null;
-        const spinner = loading ? <Spinner/> : null;
-        const content = !(loading || error) ? items : null;
+        const {dog} = this.state;
+        const items = dog.map(item => {
+            return (
+                    <li className="cards-items" key={item.id}>
+                        <img src={item.imageUrl} alt="dog" />
+                        <div className="menu__item-text">
+                            <div className="menu__item-subtitle">{item.name}</div>
+                            <div className="menu__item-descr">{item.temperament}</div>
+                        </div>
+                    </li>
+                )
+        })
 
         return (
-                <div className="cards">
-                    <div className="title">Product page</div>
-                    <div className="cards-container">
-                        {errorMessage}
-                        {spinner}
-                        {content} 
-                    </div>
-                </div>
+            <ul className="card">
+                {items}
+            </ul>
         )
     }
 }
@@ -160,4 +132,4 @@ class Cards extends Component {
 //     )
 // }
 
-export default Cards;
+export default Card;
