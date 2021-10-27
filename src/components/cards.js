@@ -42,9 +42,9 @@ class Cards extends Component {
             return (
                 <li className="cards-item" key={item.id}>
                     <img src={item.imageUrl} alt="dog" />
-                    <div className="menu__item-text">
-                        <div className="menu__item-subtitle">{item.name}</div>
-                        <div className="menu__item-descr">{item.temperament}</div>
+                    <div className="item-text">
+                        <div className="item-subtitle">{item.name}</div>
+                        <div className="item-descr">{item.temperament}</div>
                     </div>
                 </li>
             )
