@@ -146,9 +146,10 @@ class Slider extends Component {
                 <h1>Home Page</h1>
             </section> */}
             <button 
+              id="prev"
               onClick={() => this.nextProperty()} 
               disabled={property.index === data.properties.length-1}
-            >&#60;</button>
+            >&#62;</button>
             <div className={`cards-slider active-slide-${property.index}`}>
             
               <div className="new-wrap">
@@ -166,9 +167,10 @@ class Slider extends Component {
                 </div>
             </div>
             <button 
+              id="next"
               onClick={() => this.prevProperty()} 
               disabled={property.index === 0}
-            >&#62;</button>
+            >&#60;</button>
         </div>
       </div>
     );

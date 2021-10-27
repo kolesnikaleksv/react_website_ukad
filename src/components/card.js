@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './card.css';
+import './card2.css';
 import DogService from '../services/DogService';
 
 
@@ -45,7 +45,7 @@ class Card extends Component {
         })
 
         return (
-            <ul className="card">
+            <ul className="card-wrapper">
                 {items}
             </ul>
         )

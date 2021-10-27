@@ -53,7 +53,8 @@
     margin-left: 20px
 }
 .cards-items {
-    width: 421px;
+    max-width: 421px;
+    /* width: 421px; */
     height: 474px;
     /* margin: 16px 20px 24px 20px; */
     /* align-items: center; */
