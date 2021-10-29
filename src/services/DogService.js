@@ -6,8 +6,8 @@ class DogService {
         }
         return await res.json();
     }
-    getAllDogs = async () => {
-        const res = await this.getData(`https://api.thedogapi.com/v1/breeds?limit=10&page=0`);
+    getAllDogs = async (dogUrl) => {
+        const res = await this.getData(dogUrl);
         return res.map(this._transformDogs);
     }
     getDog = async(id) => {
