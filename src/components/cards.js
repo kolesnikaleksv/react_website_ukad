@@ -61,6 +61,7 @@ class Cards extends Component {
 
         const {dog, loading, error} = this.state;
         
+
         const items = this.renderItems(dog);
 
         const errorMessage = error ? <ErrorMessage/> : null;

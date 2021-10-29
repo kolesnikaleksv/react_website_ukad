@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './card2.css';
+import './card.css';
 import DogService from '../services/DogService';
 
 
@@ -32,6 +32,15 @@ class Card extends Component {
     render() {
 
         const {dog} = this.state;
+// const dogss = dog.map(item => item.id);
+// const dogssLength = dogss.length;
+// console.log(dogss);
+// console.log(dogssLength);
+
+// console.log(dog.length);
+// console.log(dog[0]);
+
+
         const items = dog.map(item => {
             return (
                     <li className="cards-items" key={item.id}>

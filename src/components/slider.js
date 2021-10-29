@@ -94,7 +94,7 @@
 
 import React, { Component } from 'react';
 // import './slider.css';
-import './slider2.css';
+import './slider.css';
 import Card from './card';
 import data from './data/data'
 

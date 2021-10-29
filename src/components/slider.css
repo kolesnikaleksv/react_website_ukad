@@ -1,137 +1,54 @@
-/* #region Default styles */
-/* body {
-    margin: 0;
-    padding: 0 0 100px 0;
-    overflow-x: hidden; } */
+.page {
+  position: relative;
   
-  .slider {
-    text-align: center;
-    position: relative;
-
- }
-  
-  /* DEMO STYLES */
-  .nav {
-    padding: 30px 0;
-    background-color: #222; }
-  
-  .nav a {
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    margin: 0 15px;
-    padding: 10px;
-    border: 1px rgba(255, 255, 255, 0.5) solid;
-    transition: all 0.3s linear;
-    text-decoration: none;
-    color: white; }
-  
-  .nav a.active {
-    background-color: #61DAFB;
-    color: #222; }
-  
-  section {
-    padding: 20px 0;
-    max-width: 350px;
-    /* margin: 0 auto;  */
 }
+.page button {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  background: #FFFFFF;
+  border: 1.7px solid #F8F8F8;
+  box-sizing: border-box;
+  box-shadow: 0px 3.4px 17px rgba(0, 0, 0, 0.1);
+  /* display: inline-block; */
+  border-radius: 50px;
+  font-size: 20px;
+  color: #757575;
+  font-weight: bold;
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 24px/2);
   
-  /* #endregion */
-  /* #region Card */
-  /* Card */
-  /* .card {
-    border: 3px #f3f3f3 solid;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s linear;
-    cursor: pointer;
-    background-color: #f3f3f3;
-    padding: 10px;
-    max-width: 350px;
-    text-align: left;
-    margin: 0 auto;} */
-    /* .card:hover {
-      background-color: #f3f3f3;
-      border-color: #f3f3f3; }
-    .card img {
-      max-width: calc(100%);
-      margin: 0 auto;
-      display: block; }
-    .card .index {
-      background-color: rgba(0, 0, 0, 0.2);
-      color: #fff;
-      line-height: 20px;
-      font-size: 14px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      padding: 0 10px; }
-    .card .price {
-      margin: 0;
-      padding: 10px 0;
-      font-weight: bold; }
-    .card .details {
-      position: relative; }
-    .card .features {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-      .card .features li {
-        padding-left: 24px;
-        margin-right: 10px;
-        display: inline-block; }
-        .card .features li span {
-          display: none; }
-        .card .features li.icon-bed {
-          background: url(./assets/bed-left-side.svg) left center;
-          background-size: auto 100%;
-          background-repeat: no-repeat; }
-        .card .features li.icon-bath {
-          background: url(./assets/bathtub.svg);
-          background-size: auto 100%;
-          background-repeat: no-repeat; }
-        .card .features li.icon-car {
-          background: url(./assets/car-compact.svg);
-          background-size: auto 100%;
-          background-repeat: no-repeat; } */
-  
-  /* #endregion */
-  /* #region cards slider */
-  .cards-slider-wrapper {
-    display: flex;
-    /* position: absolute; */
-    /* transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0,955); */
-    transition: transform 300ms;
-    
+  opacity: 0.5;
 }
+#prev {
+  right: 8.5%;
+}
+#next{
+  left: 8.5%;
+}
+.page button:hover {
+  box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(94, 100, 100, 0.349);
+}
+.cards-slider {
+  position: flex;
+  max-width: 80%;
   
-  .cards-slider {
-    position: relative;
-    max-width: 1327px;
-    
-    /* max-height: 525px; */
-    margin: 0 auto; }
-    .cards-slider .card {
-      flex: 1;
-      min-width: 451px;
-      }
-    .cards-slider:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 525px;
-      outline: 5px solid #61DAFB;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .new-wrap {
-      overflow: hidden;
-      box-sizing: border-box;
-      display: block;
-      box-shadow: 0px 4px 30px rgb(0 0 0 / 25%);
-      width: 100%;
-      height: 525px;
-    }
-  
-  /* #endregion */
+  /* max-height: 525px; */
+  margin: 0 auto; }
+.new-wrap {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 535px;
+  }
+.cards-slider {
+  position: relative;
+}
+.cards-slider-wrapper {
+  display: flex;
+  /* transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0,955); */
+  transition: transform 300ms;
+}
