@@ -1,3 +1,7 @@
+# Project Name & Pitch
+The SPA application UKAD
+
+This is a test application for UKAD, which has a slider and a product page. which get data from the API
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
