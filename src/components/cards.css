@@ -10,6 +10,7 @@
 }
 .cards-container {
     display: inline;
+    padding-bottom: 187px;
 }
 .title {
     font-family: Poppins;
@@ -25,12 +26,14 @@
 .cards-item {
     width: 350px;
     height: 474px;
-    margin: 16px 0px 24px 0px;
+    margin: 16px 10px 24px 10px;
     align-items: center;
 }
 .dog-grid {
     display: grid;
     grid-template-columns: repeat(4, 350px);
+    list-style: none;
+    justify-content: space-around;
 }
 @media (max-width:1520px) {
 .dog-grid {
@@ -48,8 +51,10 @@
         }
 }
 .cards-item img{
-    width: 100%;
+    max-width: 100%;
     height: 362px;
+    object-fit: cover;
+    margin: auto;
 }
 .item-text {
     margin: 0 auto;
@@ -90,4 +95,6 @@
     align-self: stretch;
     flex-grow: 0;
     margin: 8px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

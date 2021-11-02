@@ -25,6 +25,7 @@ class Slider extends Component {
 
   render() {
     const {property} = this.state;
+    console.log(property);
     return (
       <div className="slider">
         <section>
@@ -38,11 +39,12 @@ class Slider extends Component {
             >&#62;</button>
               <div className="cards-slider">
                 <div className="new-wrap">
-                  <div className="cards-slider-wrapper" style={{
-                      'transform': `translateX(-${property*455}px)`
+                  <ul className="cards-slider-wrapper" style={{
+                      // 'transform': `translateX(-${property*455}px)`
+                      'transform': `translateX(-${property*(34)}%)`
                       }}>
                       <Card />
-                  </div>
+                  </ul>
                 </div>
               </div>
             <button 

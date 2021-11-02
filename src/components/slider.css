@@ -1,6 +1,7 @@
 .page {
   position: relative;
-  width: 1560px;
+  /* width: 1560px; */
+  max-width: 100%;
 }
 .page button {
   width: 68px;
@@ -17,35 +18,52 @@
   font-weight: bold;
   position: absolute;
   z-index: 3;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 68px/2);
   
   opacity: 0.5;
 }
 #prev {
-  right: 4.5%;
+  right: 4.8%;
 }
 #next{
-  left: 5.5%;
+  left: 4.8%;
 }
+
 .page button:hover {
   box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
   border: 3px solid rgba(94, 100, 100, 0.349);
 }
 .cards-slider {
-  position: flex;
+  position: relative;
   max-width: 85%;
   margin: 0 auto; }
 .new-wrap {
   overflow: hidden;
   box-sizing: border-box;
   display: block;
-  width: 100%;
+  width: 100%; /* change */
   height: 535px;
   }
-.cards-slider {
-  position: relative;
-}
+
 .cards-slider-wrapper {
   display: flex;
   transition: transform 300ms;
 }
+@media (max-width:1520px) {
+  
+}
+@media (max-width:1220px) {
+  #prev {
+    right: 2.8%;
+  }
+}
+@media (max-width:998px) {
+  .new-wrap {
+    height: 310px;
+    }
+}
+@media (max-width:767px) {
+  .new-wrap {
+    height: 300px;
+    }
+} 

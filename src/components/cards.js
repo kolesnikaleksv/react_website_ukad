@@ -2,7 +2,7 @@ import { Component } from 'react';
 import './cards.css';
 import DogService from '../services/DogService';
 import Spinner from './spinner/spinner';
-import ErrorMessage from './errorMessage/ErrorMessage';
+import ErrorMessage from './errorMessage/errorMessage';
 
 
 class Cards extends Component {
@@ -36,7 +36,7 @@ class Cards extends Component {
 
     renderItems(arr) {
         const items =  arr.map((item) => {
-            
+            console.log(item.temperament);
             return (
                 <li className="cards-item" key={item.id}>
                     <img src={item.imageUrl} alt="dog" />

@@ -38,9 +38,10 @@ class Card extends Component {
         })
 
         return (
-            <ul className="card-wrapper">
+            <>
                 {items}
-            </ul>
+            </>
+            
         )
     }
 }

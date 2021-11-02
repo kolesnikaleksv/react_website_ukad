@@ -26,7 +26,7 @@
     left: 20px;
     top: calc(50% - 27.3px/2 - 0.35px);
 }
-ul {
+.navbar-container ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
