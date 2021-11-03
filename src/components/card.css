@@ -1,15 +1,7 @@
-/* .card-wrapper {
-    display: flex;
-    position: absolute;
-} */
 .cards-items {
-    /* flex: 0 0 33.3333333333%; */
     flex: 0 0 31.5%;
-    /* max-width: 33.3333333333%; */
     /* max-width: 31.5%; */
     list-style: none;
-    /* max-width: 421px; 
-     max-height: 525px; */
     margin-right: 17px;
     margin-left: 17px;
     border: 1px solid rgba(94, 100, 100, 0.349);
@@ -23,8 +15,8 @@
 }
 @media (max-width:1520px) {
     .cards-items {
-    max-width: 31%;
-    flex: 0 0 31%;
+    max-width: 30.5%;
+    flex: 0 0 30.5%;
     }
     .cards-items img{
         height: 380px;

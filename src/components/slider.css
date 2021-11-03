@@ -50,12 +50,20 @@
   transition: transform 300ms;
 }
 @media (max-width:1520px) {
-  
+  .new-wrap {
+    height: 490px;
+    }
 }
 @media (max-width:1220px) {
   #prev {
-    right: 2.8%;
+    right: 4%;
   }
+  #next{
+    left: 4%;
+  }
+  .new-wrap {
+    height: 410px;
+    }
 }
 @media (max-width:998px) {
   .new-wrap {

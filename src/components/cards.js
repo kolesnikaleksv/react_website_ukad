@@ -36,7 +36,7 @@ class Cards extends Component {
 
     renderItems(arr) {
         const items =  arr.map((item) => {
-            console.log(item.temperament);
+            
             return (
                 <li className="cards-item" key={item.id}>
                     <img src={item.imageUrl} alt="dog" />

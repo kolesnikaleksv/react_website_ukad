@@ -7,7 +7,7 @@
     display: block;
 }
 .home-slider section {
-    width: 78%;
+    width: 83%;
     height: 54px;
     font-weight: 700;
     font-style: normal;
@@ -20,17 +20,26 @@
     .home-slider {
         height: 800px;
     }
+    .home-slider section {
+        font-size: 30px;
+    }
 }
 @media (max-width:1220px) {
     .home-slider {
         height: 670px;
         margin-top: 154px;
     }
+    .home-slider section {
+        font-size: 25px;
+    }
 }
 @media (max-width:998px) {
     .home-slider {
         height: 490px;
         margin-top: 144px;
+    }
+    .home-slider section {
+        font-size: 20px;
     }
 }
 @media (max-width:767px) {

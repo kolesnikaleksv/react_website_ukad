@@ -21,12 +21,12 @@
     line-height: 54px;
     color: #000000;
     margin-top: 118px;
-    margin-left: 20px;
+    margin-left: 47px;
 }
 .cards-item {
     width: 350px;
     height: 474px;
-    margin: 16px 10px 24px 10px;
+    margin: 16px 15px 24px 15px;
     align-items: center;
 }
 .dog-grid {
@@ -34,10 +34,14 @@
     grid-template-columns: repeat(4, 350px);
     list-style: none;
     justify-content: space-around;
+    padding: 25px;
 }
 @media (max-width:1520px) {
 .dog-grid {
     grid-template-columns: repeat(3, 350px);
+    }
+    .title {
+        margin-left: 80px;
     }
 }
 @media (max-width:1170px) {
@@ -45,9 +49,16 @@
         grid-template-columns: repeat(2, 350px);
         }
 }
-@media (max-width:767px) {
+@media (max-width:820px) {
     .dog-grid {
         grid-template-columns: repeat(1, 350px);
+        }
+        .title {
+            width: 80%;
+            font-size: 36px;
+            margin: 0 auto;
+            margin-top: 65px;
+            text-align: center;
         }
 }
 .cards-item img{

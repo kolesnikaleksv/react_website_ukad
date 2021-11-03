@@ -25,7 +25,6 @@ class Slider extends Component {
 
   render() {
     const {property} = this.state;
-    console.log(property);
     return (
       <div className="slider">
         <section>
