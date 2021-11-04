@@ -2,7 +2,7 @@ import { Component } from 'react';
 import './cards.css';
 import DogService from '../services/DogService';
 import Spinner from './spinner/spinner';
-import ErrorMessage from './errorMessage/errorMessage';
+import ErrorMessage from './errorMessage/errorMessages';
 
 
 class Cards extends Component {

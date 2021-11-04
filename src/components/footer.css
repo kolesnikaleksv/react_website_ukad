@@ -4,6 +4,7 @@
     left: 0;
     bottom: 0;
     background: #022B32;
+    margin-top: auto;
  }
  .footer-container {
      position: relative;

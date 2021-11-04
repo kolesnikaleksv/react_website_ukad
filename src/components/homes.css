@@ -1,10 +1,11 @@
 .home-slider {
     margin-top: 308px;
-    height: 800px;
+    min-height: 800px;
     /* width: 1560px; */
     width: 100%;
     background: #FFFFFF;
-    display: block;
+    /* display: block; */
+    flex: 1 1 auto;
 }
 .home-slider section {
     width: 83%;
