@@ -4,11 +4,11 @@ import './homes.css';
 
 function Home() {
     return(
-        <>
+        
             <div className="home-slider">
                 <Slider />
             </div>
-        </>
+        
     )
 }
 
